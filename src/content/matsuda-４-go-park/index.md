@@ -1,20 +1,21 @@
 ---
 layout: post
-title: "松田５号公園"
+title: "松田４号公園"
 author: kakisoft
 tags: ["福岡市","東区"]
 image: index.jpg
-date: "2019-05-20"
+date: "2019-05-24"
 draft: false
 ---
 
-そこそこの広さ。    
+すっっごく小さい。  
 最寄り駅：柚須  
-福岡県福岡市東区東区松田３丁目１７
+福岡県福岡市東区松田３丁目２４  
 トイレ：なし  
 　  
 ## 特徴
 小さすぎて親子共々、楽しめないので、近くの[松田東公園](../../matsudahigashi-park/index/)か、[柚須公園](../../yusu-park/index/)がおすすめ。
+
 
 ## 看板
 ![01](./01.jpg)  
