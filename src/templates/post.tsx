@@ -286,22 +286,21 @@ const PageTemplate: React.FunctionComponent<PageTemplateProps> = props => {
                 <PostFullTitle>{post.frontmatter.title}</PostFullTitle>
               </PostFullHeader>
 
-              {(post.frontmatter.image && post.frontmatter.image.childImageSharp) && (
+              {/* kakisoft ===ヘッダ画像をカット===== */}
+              {/* {(post.frontmatter.image && post.frontmatter.image.childImageSharp) && (
                 <PostFullImage>
                   <Img
                     style={{ height: '100%' }}
                     fluid={post.frontmatter.image.childImageSharp.fluid}
                   />
                 </PostFullImage>
-              )}
+              )} */}
               <PostContent htmlAst={post.htmlAst} />
 
               {/* The big email subscribe modal content */}
               {config.showSubscribe && <Subscribe title={config.title} />}
 
               <PostFullFooter>
-                <AuthorCard author={post.frontmatter.author} />
-                <PostFullFooterRight authorId={post.frontmatter.author.id} />
               </PostFullFooter>
             </article>
           </div>
@@ -311,10 +310,6 @@ const PageTemplate: React.FunctionComponent<PageTemplateProps> = props => {
         <aside className="read-next" css={outer}>
           <div css={inner}>
             <ReadNextFeed>
-              {props.data.relatedPosts && (
-                <ReadNextCard tags={post.frontmatter.tags} relatedPosts={props.data.relatedPosts} />
-              )}
-
               {props.pageContext.prev && <PostCard post={props.pageContext.prev} />}
               {props.pageContext.next && <PostCard post={props.pageContext.next} />}
             </ReadNextFeed>
