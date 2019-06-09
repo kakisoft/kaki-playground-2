@@ -138,17 +138,20 @@ class SiteNav extends React.Component<SiteNavProps, SiteNaveState> {
     return (
       <nav css={[isHome && HomeNavRaise, SiteNavStyles]}>
         <SiteNavLeft>
-          {!isHome && <SiteNavLogo />}
+          {/* {!isHome && <SiteNavLogo />}  */}
           <ul css={NavStyles} role="menu">
             {/* TODO: mark current nav item - add class nav-current */}
             <li role="menuitem">
-              <Link to="/">Home</Link>
+              <Link to="/about">このサイトについて</Link>
             </li>
             <li role="menuitem">
-              <Link to="/about">About</Link>
+              <Link to="/">全エリア</Link>
             </li>
             <li role="menuitem">
-              <Link to="/tags/getting-started/">Getting Started</Link>
+              <Link to="/tags/福岡市/">福岡市</Link>
+            </li>
+            <li role="menuitem">
+              <Link to="/tags/糟屋郡/">糟屋郡</Link>
             </li>
           </ul>
         </SiteNavLeft>
@@ -177,10 +180,6 @@ class SiteNav extends React.Component<SiteNavProps, SiteNaveState> {
               </a>
             )}
           </SocialLinks>
-          {config.showSubscribe && (
-            <SubscribeButton onClick={this.openModal}>Subscribe</SubscribeButton>
-          )}
-          {config.showSubscribe && <SubscribeModal ref={this.subscribe} />}
         </SiteNavRight>
       </nav>
     );
