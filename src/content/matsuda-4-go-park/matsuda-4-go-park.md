@@ -14,7 +14,7 @@ draft: false
 トイレ：なし  
 　  
 ## 特徴
-小さすぎて親子共々、楽しめないので、近くの[松田東公園](../../matsudahigashi-park/index/)か、[柚須公園](../../yusu-park/index/)がおすすめ。
+小さすぎて親子共々、楽しめないので、近くの[松田東公園](../../matsudahigashi-park/matsudahigashi-park/)か、[柚須公園](../../yusu-park/yusu-park/)がおすすめ。
 
 
 ## 看板
