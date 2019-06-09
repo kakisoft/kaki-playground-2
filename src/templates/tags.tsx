@@ -104,8 +104,8 @@ const Tags: React.FunctionComponent<TagTemplateProps> = props => {
                   tagData.node.description
                 ) : (
                   <>
-                    A collection of {totalCount > 1 && `${totalCount} posts`}
-                    {totalCount === 1 && '1 post'}
+                    {totalCount > 1 && `${totalCount} 件`}
+                    {totalCount === 1 && '1 件'}
                     {totalCount === 0 && 'No posts'}
                   </>
                 )}

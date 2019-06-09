@@ -26,7 +26,7 @@ const SiteNavStyles = css`
   align-items: flex-start;
   overflow-y: hidden;
   height: 40px;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 `;
 
 const SiteNavLeft = styled.div`
@@ -112,6 +112,10 @@ const SubscribeButton = styled.a`
   }
 `;
 
+const MyConf01 = styled.span`
+  font-size: 3.5em;
+`;
+
 interface SiteNavProps {
   isHome?: boolean;
 }
@@ -144,9 +148,9 @@ class SiteNav extends React.Component<SiteNavProps, SiteNaveState> {
             <li role="menuitem">
               <Link to="/about">このサイトについて</Link>
             </li>
-            <li role="menuitem">
+            {/* <li role="menuitem">
               <Link to="/">全エリア</Link>
-            </li>
+            </li> */}
             <li role="menuitem">
               <Link to="/tags/福岡市/">福岡市</Link>
             </li>
