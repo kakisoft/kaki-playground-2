@@ -2,7 +2,7 @@
 layout: post
 title: "柚須公園（ゆすこうえん）"
 author: kakisoft
-tags: ["福岡市","東区"]
+tags: ["fukuoka-city","higashiku"]
 image: index.jpg
 date: "2019-06-03"
 draft: false

@@ -2,7 +2,7 @@
 layout: post
 title: "松田東公園"
 author: kakisoft
-tags: ["福岡市","東区"]
+tags: ["fukuoka-city","higashiku"]
 image: index.jpg
 date: "2019-06-02"
 draft: false

@@ -2,7 +2,7 @@
 layout: post
 title: "鏡公園"
 author: kakisoft
-tags: ["糟屋郡","志免町"]
+tags: ["kasuya-gun","shimemachi"]
 image: index.jpg
 date: "2019-06-02"
 draft: false
