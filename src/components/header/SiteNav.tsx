@@ -152,10 +152,10 @@ class SiteNav extends React.Component<SiteNavProps, SiteNaveState> {
               <Link to="/">全エリア</Link>
             </li> */}
             <li role="menuitem">
-              <Link to="/tags/fukuoka-city/">福岡市</Link>
+              <Link to="/tags/福岡市/">福岡市</Link>
             </li>
             <li role="menuitem">
-              <Link to="/tags/kasuya-gun/">糟屋郡</Link>
+              <Link to="/tags/糟屋郡/">糟屋郡</Link>
             </li>
           </ul>
         </SiteNavLeft>
