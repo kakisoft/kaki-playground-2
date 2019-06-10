@@ -157,6 +157,9 @@ class SiteNav extends React.Component<SiteNavProps, SiteNaveState> {
             <li role="menuitem">
               <Link to="/tags/糟屋郡/">糟屋郡</Link>
             </li>
+            <li role="menuitem">
+              <Link to="/tags/新宮町/">新宮町</Link>
+            </li>
           </ul>
         </SiteNavLeft>
         <SiteNavRight>
