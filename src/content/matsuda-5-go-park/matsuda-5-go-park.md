@@ -2,7 +2,7 @@
 layout: post
 title: "松田５号公園"
 author: kakisoft
-tags: ["福岡市","東区"]
+tags: ["福岡市"]
 image: index.jpg
 date: "2019-05-20"
 draft: false
