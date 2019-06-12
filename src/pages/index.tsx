@@ -129,9 +129,10 @@ const IndexPage: React.FunctionComponent<IndexProps> = props => {
           }}
         >
           <div css={inner}>
+            <SiteNav isHome={false} />  {/* Add from kaki */}
             <SiteHeaderContent>
               <SiteTitle>
-                {props.data.logo ? (
+                {/* {props.data.logo ? (
                   <img
                     style={{ maxHeight: '45px' }}
                     src={props.data.logo.childImageSharp.fixed.src}
@@ -139,11 +140,12 @@ const IndexPage: React.FunctionComponent<IndexProps> = props => {
                   />
                 ) : (
                   config.title
-                )}
+                )} */}
+                {config.title}  {/* Add from kaki */}
               </SiteTitle>
               <SiteDescription>{config.description}</SiteDescription>
             </SiteHeaderContent>
-            <SiteNav isHome />
+            {/* <SiteNav isHome /> */}
           </div>
         </header>
         <main id="site-main" css={[SiteMain, outer]}>

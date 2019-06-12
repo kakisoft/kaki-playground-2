@@ -142,15 +142,15 @@ class SiteNav extends React.Component<SiteNavProps, SiteNaveState> {
     return (
       <nav css={[isHome && HomeNavRaise, SiteNavStyles]}>
         <SiteNavLeft>
-          {/* {!isHome && <SiteNavLogo />}  */}
+          {!isHome && <SiteNavLogo />} 
           <ul css={NavStyles} role="menu">
             {/* TODO: mark current nav item - add class nav-current */}
             <li role="menuitem">
               <Link to="/about">このサイトについて</Link>
             </li>
-            {/* <li role="menuitem">
+            <li role="menuitem">
               <Link to="/">全エリア</Link>
-            </li> */}
+            </li>
             <li role="menuitem">
               <Link to="/tags/福岡市/">福岡市</Link>
             </li>
