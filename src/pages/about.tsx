@@ -17,7 +17,9 @@ const PageTemplate = css`
   }
 `;
 
-const About: React.FunctionComponent = () => (
+// const IndexPage: React.FunctionComponent<IndexProps> = props => {
+// const About: React.FunctionComponent = () => (
+const About: React.FunctionComponent = props => (
   <IndexLayout>
     <Helmet>
       <title>About</title>
@@ -36,6 +38,11 @@ const About: React.FunctionComponent = () => (
 
           <PostFullContent className="post-full-content">
             <div className="post-content">
+              <img
+                // style={{ maxHeight: '45px' }}
+                src={props.data.kame.childImageSharp.fixed.src}
+                // alt={config.title}
+              />
               <p>
                 公園を中心とした、子供と遊ぶ場所をかいてます。
               </p>
@@ -82,3 +89,17 @@ const About: React.FunctionComponent = () => (
 );
 
 export default About;
+
+export const pageQuery = graphql`
+  query {
+    kame: file(relativePath: { eq: "img/kame.jpg" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        fixed {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`;
