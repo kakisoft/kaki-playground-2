@@ -49,6 +49,11 @@ interface TagTemplateProps {
       }>;
     };
   };
+  header: {
+    childImageSharp: {
+      fluid: any;
+    };
+  };
 }
 
 const Tags: React.FunctionComponent<TagTemplateProps> = props => {
@@ -88,14 +93,18 @@ const Tags: React.FunctionComponent<TagTemplateProps> = props => {
         <header
           className={`${tagData && tagData.node.image ? '' : 'no-cover'}`}
           css={[outer, SiteHeader]}
+          // style={{
+          //   backgroundImage:
+          //     tagData && tagData.node.image ?
+          //       `url('${props.data.header.childImageSharp.fluid.src}')` :
+          //       '',
+          // }}
           style={{
-            backgroundImage:
-              tagData && tagData.node.image ?
-                `url('${tagData.node.image.childImageSharp.fluid.src}')` :
-                '',
-          }}
+            backgroundImage: `url('${props.data.header.childImageSharp.fluid.src}')`,
+          }}          
         >
-          
+
+
           <div css={inner}>
             <SiteNav isHome={false} />
             <SiteHeaderContent>
@@ -148,6 +157,21 @@ export const pageQuery = graphql`
         }
       }
     }
+
+
+    header: file(relativePath: { eq: "img/blog-cover.jpg" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+
+
+
     allMarkdownRemark(
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }
