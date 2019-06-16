@@ -11,7 +11,7 @@ export const PostFullContent = styled.section`
   padding: 70px 100px 0;
   min-height: 230px;
   // font-family: Georgia, serif;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   line-height: 1.6em;
   background: #fff;
 
@@ -111,6 +111,7 @@ export const PostFullContent = styled.section`
     margin: 1.5em auto;
     max-width: 1040px;
     height: auto;
+    align:left;
   }
 
   @media (max-width: 1040px) {
@@ -242,7 +243,8 @@ export const PostFullContent = styled.section`
 
   h2 {
     margin: 0.5em 0 0.2em 0;
-    font-size: 3.6rem;
+    // font-size: 3.6rem;
+    font-size: 2.8rem;
     font-weight: 700;
   }
   @media (max-width: 500px) {
