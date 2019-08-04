@@ -81,3 +81,19 @@ Edit `gatsby-config.js` section `siteMetadata`
     siteUrl: 'https://mysite.com', // full path to blog - no ending slash
   },
 ```
+
+## _
+```
+yarn dev
+```
+
+
+## _
+```
+signboard
+bench01
+ground01
+swing01
+toilet
+playground-equipment-1-01
+```
